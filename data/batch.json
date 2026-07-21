@@ -1,28 +1,37 @@
 [
   {
-    "hotel_id": 2,
-    "hotel_name": "Diamond Elite Hotel & Spa",
+    "hotel_id": 1,
+    "hotel_name": "Palmeras Beach Hotel",
     "period_id": 1,
-    "acente": "ETS Tur",
-    "url": "https://www.etstur.com/Diamond-Elite-Hotel-Spa-16",
+    "acente": "Tatilbudur",
+    "url": "https://www.tatilbudur.com/palmeras-beach-hotel",
     "giris": "2026-08-17",
     "cikis": "2026-08-24"
   },
   {
-    "hotel_id": 6,
-    "hotel_name": "Panorama Hotel",
+    "hotel_id": 8,
+    "hotel_name": "Paloma Family Club Bitez",
     "period_id": 1,
-    "acente": "ETS Tur",
-    "url": "https://www.etstur.com/Panorama-Hotel",
+    "acente": "Tatilbudur",
+    "url": "https://www.tatilbudur.com/paloma-family-club-bitez",
     "giris": "2026-08-17",
     "cikis": "2026-08-24"
   },
   {
-    "hotel_id": 7,
-    "hotel_name": "Diamond Premium Hotel & Spa",
+    "hotel_id": 3,
+    "hotel_name": "Lussoro Bodrum",
     "period_id": 1,
-    "acente": "ETS Tur",
-    "url": "https://www.etstur.com/Diamond-Premium-Hotel-Spa",
+    "acente": "Touristica",
+    "url": "https://www.touristica.com.tr/lussoro-bodrum",
+    "giris": "2026-08-17",
+    "cikis": "2026-08-24"
+  },
+  {
+    "hotel_id": 4,
+    "hotel_name": "Sunshine Holiday Resort",
+    "period_id": 1,
+    "acente": "Touristica",
+    "url": "https://www.touristica.com.tr/sunshine-holiday-resort",
     "giris": "2026-08-17",
     "cikis": "2026-08-24"
   }
