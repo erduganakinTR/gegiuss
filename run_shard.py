@@ -18,7 +18,13 @@ def main():
     with open(batch_path, encoding="utf-8") as f:
         combos = json.load(f)
 
-    mine = [c for i, c in enumerate(combos) if i % shard_count == shard]
+    # Kombinasyonlarda onceden hesaplanmis "shard" alani varsa (agirlikli
+    # LPT dagitimi, bkz. gha_orchestrator.py) onu kullan — yoksa (eski
+    # batch dosyalariyla geriye uyumluluk icin) basit index%shard_count'a don.
+    if combos and "shard" in combos[0]:
+        mine = [c for c in combos if c["shard"] == shard]
+    else:
+        mine = [c for i, c in enumerate(combos) if i % shard_count == shard]
     print(f"Shard {shard}/{shard_count}: {len(mine)} kombinasyon", flush=True)
 
     from scrapers import ets, tatilbudur, jolly, setur, touristica, coral, gezinomi
