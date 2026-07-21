@@ -1,0 +1,37 @@
+name: Otel Tarama
+
+on:
+  workflow_dispatch:
+    inputs:
+      shard_count:
+        description: "Toplam paralel job sayisi"
+        required: true
+        default: "20"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bagimliliklari kur
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Bu shard'i tara
+        run: python run_shard.py data/batch.json ${{ matrix.shard }} ${{ github.event.inputs.shard_count }}
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sonuc-${{ matrix.shard }}
+          path: results_*.json
+          if-no-files-found: ignore

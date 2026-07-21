@@ -1,0 +1,11 @@
+flask
+flask-cors
+apscheduler
+selenium
+webdriver-manager
+beautifulsoup4
+requests
+playwright
+playwright-stealth
+setuptools
+openpyxl

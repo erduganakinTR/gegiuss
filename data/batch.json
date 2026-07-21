@@ -1,0 +1,29 @@
+[
+  {
+    "hotel_id": 2,
+    "hotel_name": "Diamond Elite Hotel & Spa",
+    "period_id": 1,
+    "acente": "ETS Tur",
+    "url": "https://www.etstur.com/Diamond-Elite-Hotel-Spa-16",
+    "giris": "2026-08-17",
+    "cikis": "2026-08-24"
+  },
+  {
+    "hotel_id": 6,
+    "hotel_name": "Panorama Hotel",
+    "period_id": 1,
+    "acente": "ETS Tur",
+    "url": "https://www.etstur.com/Panorama-Hotel",
+    "giris": "2026-08-17",
+    "cikis": "2026-08-24"
+  },
+  {
+    "hotel_id": 7,
+    "hotel_name": "Diamond Premium Hotel & Spa",
+    "period_id": 1,
+    "acente": "ETS Tur",
+    "url": "https://www.etstur.com/Diamond-Premium-Hotel-Spa",
+    "giris": "2026-08-17",
+    "cikis": "2026-08-24"
+  }
+]
