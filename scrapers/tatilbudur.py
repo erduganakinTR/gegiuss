@@ -107,7 +107,7 @@ def get_price(url, giris, cikis, yetiskin, cocuk, cocuk_yaslari, oda_tipi, reuse
         try:
             html = json.loads(res["text"]).get("view", "")
         except Exception:
-            print("[Tatilbudur] JSON parse hatasi")
+            print(f"[Tatilbudur] JSON parse hatasi (DEBUG hotelId={hotel_id!r} loc={product_loc!r}): {res['text'][:300]!r}")
             return scrape_result(status="error")
         if not html:
             return scrape_result(status="error")
